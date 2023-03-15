@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -13,22 +13,33 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TwoViews" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="elA-ng-2gE">
-                                <rect key="frame" x="16" y="445" width="361" height="373"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="elA-ng-2gE">
+                                <rect key="frame" x="16" y="463" width="382" height="383"/>
                                 <color key="backgroundColor" systemColor="systemGreenColor"/>
                             </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="d8e-am-dVh">
-                                <rect key="frame" x="16" y="59" width="361" height="373"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Flm-mW-VBb">
+                                <rect key="frame" x="16" y="64" width="382" height="383"/>
                                 <color key="backgroundColor" systemColor="systemGrayColor"/>
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Flm-mW-VBb" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="2He-fQ-th2"/>
+                            <constraint firstItem="elA-ng-2gE" firstAttribute="width" secondItem="Flm-mW-VBb" secondAttribute="width" id="4Un-Z2-UwL"/>
+                            <constraint firstItem="Flm-mW-VBb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="CFQ-I2-fqs"/>
+                            <constraint firstItem="elA-ng-2gE" firstAttribute="height" secondItem="Flm-mW-VBb" secondAttribute="height" id="CTQ-am-NPM"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Flm-mW-VBb" secondAttribute="trailing" constant="16" id="Clb-DK-xq2"/>
+                            <constraint firstItem="elA-ng-2gE" firstAttribute="top" secondItem="Flm-mW-VBb" secondAttribute="bottom" constant="16" id="KNh-Qz-8Rn"/>
+                            <constraint firstItem="elA-ng-2gE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="Mzy-wV-m9r"/>
+                            <constraint firstItem="Flm-mW-VBb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="NvK-av-NVt"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="elA-ng-2gE" secondAttribute="bottom" constant="16" id="Ypl-s4-mOe"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="elA-ng-2gE" secondAttribute="trailing" constant="16" id="cE6-PK-bTU"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Flm-mW-VBb" secondAttribute="trailing" constant="16" id="yfC-eR-Wzc"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
